@@ -12,8 +12,9 @@
 
 @property CGPoint start;
 @property CGPoint end;
+@property (weak, nonatomic) UIColor *chosenColor;
 
--(instancetype)initWithStart:(CGPoint)start End:(CGPoint)end;
+-(instancetype)initWithStart:(CGPoint)start End:(CGPoint)end color:(UIColor *)color;
 
 
 @end

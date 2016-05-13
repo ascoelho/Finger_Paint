@@ -10,12 +10,13 @@
 
 @implementation Line
 
--(instancetype)initWithStart:(CGPoint)start End:(CGPoint)end
+-(instancetype)initWithStart:(CGPoint)start End:(CGPoint)end color:(UIColor *)color
 {
     self = [super init];
     if (self) {
         _start = start;
         _end = end;
+        _chosenColor = color;
     }
     return self;
 }

@@ -24,6 +24,7 @@
     self = [super init];
     if (self) {
     _lines = [NSMutableArray new];
+    _chosenColor = [UIColor blackColor];
     }
     return self;
 }
@@ -38,7 +39,8 @@
         
         UITouch *touch = [[event allTouches] anyObject];
         
-        Line *newLine = [[Line alloc] initWithStart:[touch previousLocationInView:self] End:[touch locationInView:self]];
+        Line *newLine = [[Line alloc] initWithStart:[touch previousLocationInView:self] End:[touch locationInView:self] color:self.chosenColor];
+        
                          
         [self.lines addObject:newLine];
         
@@ -56,17 +58,19 @@
 - (void)drawRect:(CGRect)rect {
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetStrokeColorWithColor(context, [self chosenColor].CGColor);
-    CGContextSetLineWidth(context, 6.0f);
-    CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-    CGContextSetLineJoin(UIGraphicsGetCurrentContext(), kCGLineJoinRound);
+
     
     
     for (Line *line in self.lines) {
+        CGContextSetStrokeColorWithColor(context, [line chosenColor].CGColor);
+        CGContextSetLineWidth(context, 6.0f);
+        CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
+        CGContextSetLineJoin(UIGraphicsGetCurrentContext(), kCGLineJoinRound);
         CGContextMoveToPoint(context, line.start.x , line.start.y);
         CGContextAddLineToPoint(context, line.end.x, line.end.y);
+        CGContextStrokePath(context);
     }
-    CGContextStrokePath(context);
+    
 }
 
 
