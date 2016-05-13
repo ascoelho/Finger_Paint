@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomView.h"
+
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) CustomView *customView;
+@property (weak, nonatomic) IBOutlet UISlider *colorSlider;
+@property (weak, nonatomic) IBOutlet UIImageView *colorWhellImageView;
+
+@property (strong, nonatomic) NSArray *colorsArray;
 
 
 @end

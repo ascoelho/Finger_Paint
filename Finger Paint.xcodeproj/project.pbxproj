@@ -15,6 +15,9 @@
 		43E7F54F1CE651D1007BEDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E7F54D1CE651D1007BEDDB /* LaunchScreen.storyboard */; };
 		43E7F55A1CE651D1007BEDDB /* Finger_PaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7F5591CE651D1007BEDDB /* Finger_PaintTests.m */; };
 		43E7F5651CE651D1007BEDDB /* Finger_PaintUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7F5641CE651D1007BEDDB /* Finger_PaintUITests.m */; };
+		43E7F5771CE65A45007BEDDB /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7F5761CE65A45007BEDDB /* CustomView.m */; };
+		43E7F57A1CE663E4007BEDDB /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7F5791CE663E4007BEDDB /* Line.m */; };
+		43E7F57F1CE675C3007BEDDB /* colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E7F57E1CE675C3007BEDDB /* colorPicker.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		43E7F5601CE651D1007BEDDB /* Finger PaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger PaintUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E7F5641CE651D1007BEDDB /* Finger_PaintUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Finger_PaintUITests.m; sourceTree = "<group>"; };
 		43E7F5661CE651D1007BEDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E7F5751CE65A45007BEDDB /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = ../CustomView.h; sourceTree = "<group>"; };
+		43E7F5761CE65A45007BEDDB /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = ../CustomView.m; sourceTree = "<group>"; };
+		43E7F5781CE663E4007BEDDB /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		43E7F5791CE663E4007BEDDB /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		43E7F57E1CE675C3007BEDDB /* colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPicker.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,12 @@
 				43E7F5431CE651D1007BEDDB /* AppDelegate.m */,
 				43E7F5451CE651D1007BEDDB /* ViewController.h */,
 				43E7F5461CE651D1007BEDDB /* ViewController.m */,
+				43E7F57E1CE675C3007BEDDB /* colorPicker.png */,
 				43E7F5481CE651D1007BEDDB /* Main.storyboard */,
+				43E7F5751CE65A45007BEDDB /* CustomView.h */,
+				43E7F5761CE65A45007BEDDB /* CustomView.m */,
+				43E7F5781CE663E4007BEDDB /* Line.h */,
+				43E7F5791CE663E4007BEDDB /* Line.m */,
 				43E7F54B1CE651D1007BEDDB /* Assets.xcassets */,
 				43E7F54D1CE651D1007BEDDB /* LaunchScreen.storyboard */,
 				43E7F5501CE651D1007BEDDB /* Info.plist */,
@@ -245,6 +258,7 @@
 			files = (
 				43E7F54F1CE651D1007BEDDB /* LaunchScreen.storyboard in Resources */,
 				43E7F54C1CE651D1007BEDDB /* Assets.xcassets in Resources */,
+				43E7F57F1CE675C3007BEDDB /* colorPicker.png in Resources */,
 				43E7F54A1CE651D1007BEDDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E7F57A1CE663E4007BEDDB /* Line.m in Sources */,
 				43E7F5471CE651D1007BEDDB /* ViewController.m in Sources */,
+				43E7F5771CE65A45007BEDDB /* CustomView.m in Sources */,
 				43E7F5441CE651D1007BEDDB /* AppDelegate.m in Sources */,
 				43E7F5411CE651D1007BEDDB /* main.m in Sources */,
 			);
